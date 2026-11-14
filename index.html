@@ -154,6 +154,7 @@ svg.mk,svg.wm{display:block;width:100%;height:auto}
 .stage .panel{position:absolute;inset:0;background:var(--petal)}
 .stage-view{position:absolute;inset:0;display:grid;place-items:center;padding:28px;opacity:0;transform:scale(.94);transition:opacity .4s ease,transform .4s cubic-bezier(.2,.8,.2,1);pointer-events:none}
 .stage-view img{max-width:100%;max-height:100%;object-fit:contain;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.22);background:#fff}
+.stage-view.s-step-4 img{background:transparent;border-radius:0;box-shadow:none;filter:drop-shadow(0 14px 28px rgba(112,0,24,.18));max-height:82%}
 .stage svg.s{width:100%;height:100%;overflow:visible}
 .s .arm{transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1);--a:#000;--b:#700018}
 .s .wmk{transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1);--a:#000;--b:#700018}
@@ -351,15 +352,7 @@ svg.mk,svg.wm{display:block;width:100%;height:auto}
         <div class="stage-view s-step-1"><img src="assets/logo/sketch-hand-drawn-clean.jpg" alt="Initial hand-drawn pencil sketches of P and C letters formed with bicep curves"></div>
         <div class="stage-view s-step-2"><img src="assets/logo/sketch-digital-concepts.png" alt="Digital concept sketches showing home rooflines, barbells, and floor exercise postures"></div>
         <div class="stage-view s-step-3"><img src="assets/logo/sketch-wordmark-arm.png" alt="Wordmark letterform integration testing the arm silhouette as the letter V in CURVE"></div>
-        <div class="stage-view s-step-4">
-          <svg class="s" viewBox="0 0 400 400" aria-hidden="true">
-            <g transform="translate(84 42) scale(1.1)">
-              <g class="arm arm-a"><use href="#mk-a"/></g>
-              <g class="arm arm-b"><use href="#mk-b"/></g>
-            </g>
-            <g transform="translate(50 122) scale(1.2)"><g class="wmk"><use href="#wm-a"/><use href="#wm-b"/></g></g>
-          </svg>
-        </div>
+        <div class="stage-view s-step-4"><img src="assets/logo/logo-mark.png" alt="PureCurve final brand mark: dual flexed arms forming the PC monogram"></div>
       </div>
       <ol class="steps" id="steps" role="tablist" aria-label="Logo development steps">
         <li role="presentation"><button role="tab" data-step="1" aria-selected="false"><span class="n">1</span><span class="t">Hand-drawn concept sketch</span><span class="d">Initial notebook exploration experimenting with interlocking "P" and "C" initials formed by muscular bicep curves.</span></button></li>
